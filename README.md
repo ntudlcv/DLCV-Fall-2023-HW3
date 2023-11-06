@@ -1,4 +1,4 @@
-# DLCV-Fall-2022-HW3
+# DLCV-Fall-2023-HW3
 
 Please click [this link](https://docs.google.com/presentation/d/1EULIBowTya5Teydha7DhopHGA8Mzy4QmghByLa3PiL8/edit?usp=sharing) to view the slides of HW3
 
@@ -13,7 +13,7 @@ Note that you should replace `<username>` with your own GitHub username.
 
 # Submission Rules
 ### Deadline
-2022/11/28 (Tue.) 23:59
+2023/11/28 (Tue.) 23:59
 
 ### Packages
 This homework should be done using python3.8. For a list of packages you are allowed to import in this assignment, please refer to the requirments.txt for more details.
