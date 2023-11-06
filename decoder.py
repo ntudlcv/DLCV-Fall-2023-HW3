@@ -1,10 +1,8 @@
 import math
 import collections
-
 import torch
 from torch import nn, Tensor
 import torch.nn.functional as F
-
 
 class Config:
 
@@ -18,13 +16,13 @@ class Config:
 
 class Attention(nn.Module):
 
-    def __init__(self, config):
+    def __init__(self, cfg):
         super().__init__()
-        self.c_attn = nn.Linear(config.n_embd, 3 * config.n_embd)
-        self.c_proj = nn.Linear(config.n_embd, config.n_embd)
-        self.n_head = config.n_head
-        self.n_embd = config.n_embd
-        size = config.block_size
+        self.c_attn = nn.Linear(cfg.n_embd, 3 * cfg.n_embd)
+        self.c_proj = nn.Linear(cfg.n_embd, cfg.n_embd)
+        self.n_head = cfg.n_head
+        self.n_embd = cfg.n_embd
+        size = cfg.block_size
         self.register_buffer('bias', torch.tril(torch.ones(size, size)).view(1, 1, size, size))
 
     def forward(self, x):
