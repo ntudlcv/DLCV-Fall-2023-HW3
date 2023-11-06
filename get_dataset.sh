@@ -1,5 +1,4 @@
 # Download dataset
-gdown 1hJCiOeuLoICaKaFMsXMByl89b6jNmgz9 -O hw3_data.zip
-
+gdown 11rP6KmR5Qwjhx0rfag0b5TZGBTRuPtQR -O hw3_data.zip
 # Unzip the downloaded zip file
 unzip ./hw3_data.zip
